@@ -1,5 +1,5 @@
 <?php
-class BancoController {
+class UsuarioController {
     
     private $usuario;
 

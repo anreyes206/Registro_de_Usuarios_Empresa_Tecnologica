@@ -1,7 +1,7 @@
 <?php
 require_once 'config/conexion.php';
 require_once 'models/Usuario.php';
-require_once 'controllers/UsuarioController.php';
+require_once 'controller/UsuarioController.php';
 
 $controlador = new UsuarioController();
 
