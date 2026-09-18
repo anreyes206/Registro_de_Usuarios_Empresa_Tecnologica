@@ -1,14 +1,17 @@
 <?php
-class UsuarioController {
-    
+
+require_once __DIR__ . "/../models/Usuario.php";
+
+class UsuarioController
+{
     private $usuario;
 
-    public function __construct() 
+    public function __construct()
     {
-        $this->modelo = new UsuarioModel();
+        $this->usuario = new Usuario();
     }
-    
-    public function registrar() 
+
+    public function registrar()
     {
         if ($_SERVER["REQUEST_METHOD"] !== "POST") {
             header("Location: index.php?pagina=registro");

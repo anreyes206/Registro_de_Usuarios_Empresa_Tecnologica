@@ -1,9 +1,14 @@
 <?php
-class UsuarioModel {
-    private $db;
 
-    public function __construct() {
-        $this->db = Database::conectar();
+require_once __DIR__ . "/../config/conexion.php";
+
+class Usuario
+{
+    private $conexion;
+
+    public function __construct()
+    {
+        $this->conexion = Database::conectar();
     }
 
     public function registrar($dni, $nombre_completo, $correo, $password, $telefono, $cargo, $estado)
