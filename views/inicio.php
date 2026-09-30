@@ -68,6 +68,14 @@
         .boton.lista:hover {
             background: #15803d;
         }
+        
+        .boton.registrar {
+            background: #169aa3;
+        }
+
+        .boton.registrar:hover {
+            background: #156780;
+        }
     </style>
 </head>
 
@@ -82,7 +90,11 @@
         <div class="botones">
 
             <a href="index.php?pagina=registro" class="boton">
-                Registrar
+                Registrar usuario
+            </a>
+
+            <a href="#" class="boton registrar">
+                Registrar entrada
             </a>
 
             <a href="index.php?pagina=usuarios" class="boton lista">

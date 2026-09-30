@@ -176,11 +176,9 @@
         <h1>Registro de Usuario</h1>
 
         <?php if (isset($_GET["mensaje"]) && $_GET["mensaje"] == "exito"): ?>
-
             <div class="mensaje exito">
                 Usuario registrado correctamente.
             </div>
-
         <?php endif; ?>
 
         <?php if (isset($_GET["error"])): ?>
